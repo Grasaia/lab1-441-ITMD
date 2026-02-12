@@ -1,0 +1,259 @@
+<!-- 
+CUSTOMIZATION TEMPLATE
+Copy and paste these snippets to customize your resume
+
+This file is for reference only and does NOT need to be included in your final project.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customization Templates</title>
+    <style>
+        body {
+            font-family: monospace;
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        .section {
+            background: #252526;
+            padding: 2rem;
+            margin: 1rem 0;
+            border-left: 4px solid #007acc;
+        }
+        h2 {
+            color: #4ec9b0;
+            margin-top: 0;
+        }
+        code {
+            background: #1e1e1e;
+            padding: 0.5rem;
+            display: block;
+            margin: 1rem 0;
+            overflow-x: auto;
+        }
+        .comment {
+            color: #6a9955;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Resume Customization Templates</h1>
+<p>Use these templates as quick reference for common customizations.</p>
+
+<!-- TEMPLATE 1: Additional Work Experience -->
+<div class="section">
+    <h2>Add Another Job Entry</h2>
+    <p>Copy this block and paste it in the experience-section, after existing job items:</p>
+    <code>&lt;article class="experience-item"&gt;
+    &lt;h3 class="job-title"&gt;Your Job Title Here&lt;/h3&gt;
+    &lt;p class="company"&gt;Company Name&lt;/p&gt;
+    &lt;p class="dates"&gt;January 2024 - December 2024&lt;/p&gt;
+    &lt;ul class="job-description"&gt;
+        &lt;li&gt;Key accomplishment or responsibility&lt;/li&gt;
+        &lt;li&gt;Another achievement or task&lt;/li&gt;
+        &lt;li&gt;Technology or process you used&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/article&gt;</code>
+</div>
+
+<!-- TEMPLATE 2: Additional Project -->
+<div class="section">
+    <h2>Add Another Project</h2>
+    <p>Copy this block and paste it in the projects-section, after existing projects:</p>
+    <code>&lt;article class="project-item"&gt;
+    &lt;h3 class="project-title"&gt;Project Name&lt;/h3&gt;
+    &lt;p class="project-description"&gt;
+        Brief description of what the project does and what problem it solves.
+        Keep this concise - 1-2 sentences.
+    &lt;/p&gt;
+    &lt;p class="project-tech"&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; HTML, CSS, JavaScript&lt;/p&gt;
+    &lt;a href="https://github.com/yourusername/project-name" class="project-link" target="_blank"&gt;View on GitHub&lt;/a&gt;
+&lt;/article&gt;</code>
+</div>
+
+<!-- TEMPLATE 3: Additional Skill -->
+<div class="section">
+    <h2>Add Another Skill</h2>
+    <p>Add this line to the skills-list ul element:</p>
+    <code>&lt;li class="skill-item"&gt;Your Skill Name&lt;/li&gt;</code>
+    <p><strong>Example skills to add:</strong></p>
+    <code>React.js
+Vue.js
+TypeScript
+Python
+SQL
+MongoDB
+AWS
+Docker
+REST APIs
+UI/UX Design
+Project Management
+Communication</code>
+</div>
+
+<!-- TEMPLATE 4: New Section -->
+<div class="section">
+    <h2>Add a New Section (Certifications, Languages, etc.)</h2>
+    <p>Add this entire section to your main element, before the footer:</p>
+    <code>&lt;section class="certifications-section"&gt;
+    &lt;h2 class="section-title"&gt;Certifications&lt;/h2&gt;
+    &lt;article class="certification-item"&gt;
+        &lt;h3 class="cert-title"&gt;Certification Name&lt;/h3&gt;
+        &lt;p class="cert-issuer"&gt;Issuing Organization&lt;/p&gt;
+        &lt;p class="cert-date"&gt;Completed: Month Year&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;</code>
+    <p>Then add CSS styling in styles.css:</p>
+    <code>.certifications-section {
+    padding: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.certification-item {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+}</code>
+</div>
+
+<!-- TEMPLATE 5: Color Customization -->
+<div class="section">
+    <h2>Change Color Scheme</h2>
+    <p>Find and replace these color codes in styles.css:</p>
+    <code><span class="comment">/* Original Blues */</span>
+#0066cc  → Your Primary Color
+#0052a3  → Your Dark Color
+#61dafb  → Your Accent Color
+
+<span class="comment">/* Example: Change to Purple Theme */</span>
+#0066cc  → #7c3aed  (Purple)
+#0052a3  → #6d28d9  (Dark Purple)
+#61dafb  → #a78bfa  (Light Purple)</code>
+</div>
+
+<!-- TEMPLATE 6: Font Customization -->
+<div class="section">
+    <h2>Change Fonts</h2>
+    <p>In styles.css, modify the body font-family:</p>
+    <code>/* Current */
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+/* Modern Serif */
+font-family: 'Georgia', 'Times New Roman', serif;
+
+/* Clean Sans-Serif */
+font-family: 'Trebuchet MS', 'Arial', sans-serif;
+
+/* Google Fonts (add link in &lt;head&gt;) */
+&lt;link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet"&gt;
+font-family: 'Poppins', sans-serif;</code>
+</div>
+
+<!-- TEMPLATE 7: Multiple Contact Methods -->
+<div class="section">
+    <h2>Add More Contact Links</h2>
+    <p>Add these lines to the contact-links nav:</p>
+    <code><span class="comment">&lt;!-- Phone Number --&gt;</span>
+&lt;a href="tel:+14155552671" class="contact-link"&gt;
+    &lt;span&gt;Phone&lt;/span&gt;
+&lt;/a&gt;
+
+<span class="comment">&lt;!-- Twitter/X --&gt;</span>
+&lt;a href="https://twitter.com/yourusername" class="contact-link" target="_blank"&gt;
+    &lt;span&gt;Twitter&lt;/span&gt;
+&lt;/a&gt;
+
+<span class="comment">&lt;!-- Personal Website --&gt;</span>
+&lt;a href="https://yourwebsite.com" class="contact-link" target="_blank"&gt;
+    &lt;span&gt;Website&lt;/span&gt;
+&lt;/a&gt;</code>
+</div>
+
+<!-- TEMPLATE 8: Education with Multiple Degrees -->
+<div class="section">
+    <h2>Add Multiple Education Entries</h2>
+    <code>&lt;article class="education-item"&gt;
+    &lt;h3 class="degree"&gt;Bachelor of Science in Information Technology&lt;/h3&gt;
+    &lt;p class="institution"&gt;Illinois Institute of Technology (IIT)&lt;/p&gt;
+    &lt;p class="graduation"&gt;Expected Graduation: May 2026&lt;/p&gt;
+&lt;/article&gt;
+
+&lt;article class="education-item"&gt;
+    &lt;h3 class="degree"&gt;High School Diploma&lt;/h3&gt;
+    &lt;p class="institution"&gt;Lincoln High School&lt;/p&gt;
+    &lt;p class="graduation"&gt;Graduated: June 2022&lt;/p&gt;
+&lt;/article&gt;</code>
+</div>
+
+<!-- TEMPLATE 9: Custom Section Styling -->
+<div class="section">
+    <h2>Create Custom Section Styling</h2>
+    <p>For a new section with different styling:</p>
+    <code><span class="comment">/* HTML */</span>
+&lt;section class="awards-section"&gt;
+    &lt;h2 class="section-title"&gt;Awards & Recognition&lt;/h2&gt;
+    &lt;article class="award-item"&gt;
+        &lt;h3&gt;Award Name&lt;/h3&gt;
+        &lt;p&gt;Awarded by: Organization&lt;/p&gt;
+        &lt;p&gt;Date: Month Year&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;
+
+<span class="comment">/* CSS */</span>
+.awards-section {
+    padding: 2rem;
+    border-top: 1px solid #eee;
+}
+
+.award-item {
+    background: linear-gradient(135deg, #fff3cd 0%, #fff9e6 100%);
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}</code>
+</div>
+
+<!-- TEMPLATE 10: Responsive Image -->
+<div class="section">
+    <h2>Add Project Screenshots or Images</h2>
+    <code>&lt;article class="project-item"&gt;
+    &lt;img src="project-screenshot.png" alt="Screenshot of project homepage showing header and navigation" class="project-image"&gt;
+    &lt;h3 class="project-title"&gt;Project Name&lt;/h3&gt;
+    &lt;p class="project-description"&gt;Description...&lt;/p&gt;
+&lt;/article&gt;
+
+<span class="comment">/* Add to CSS */</span>
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}</code>
+</div>
+
+<!-- QUICK REFERENCE -->
+<div class="section">
+    <h2>Quick Reference: Where to Find Things</h2>
+    <code>Header/Name        → Line 12-37 in index.html
+Summary Section    → Line 41-49 in index.html
+Education Section  → Line 51-60 in index.html
+Skills Section     → Line 62-73 in index.html
+Experience Section → Line 75-107 in index.html
+Projects Section   → Line 109-158 in index.html
+Footer             → Line 162-168 in index.html
+
+Header Styling     → Line 71-143 in styles.css
+Typography        → Line 19-42 in styles.css
+Section Styling   → Line 193-200 in styles.css
+Responsive Design  → Line 410-550 in styles.css</code>
+</div>
+
+</body>
+</html>
