@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Guide - Resume Webpage</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 3rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #0066cc;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #0066cc;
+            padding-bottom: 0.75rem;
+        }
+
+        h2 {
+            color: #0052a3;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            color: #333;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            color: #d63384;
+        }
+
+        pre {
+            background-color: #f4f4f4;
+            padding: 1rem;
+            border-left: 4px solid #0066cc;
+            overflow-x: auto;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        ul, ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight {
+            background-color: #fff3cd;
+            padding: 1rem;
+            border-left: 4px solid #ffc107;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        .success {
+            background-color: #d4edda;
+            padding: 1rem;
+            border-left: 4px solid #28a745;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0066cc;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎓 Resume Webpage - Setup & Customization Guide</h1>
+
+        <p><strong>Project:</strong> ITMD 441 Lab 1 - Personal Resume Webpage</p>
+        <p><strong>Technologies:</strong> HTML5, CSS3, GitHub Pages</p>
+
+        <h2>📋 Quick Start Checklist</h2>
+        <ul>
+            <li>☐ Clone or download the repository</li>
+            <li>☐ Add your profile image (profile.jpg)</li>
+            <li>☐ Customize content in index.html</li>
+            <li>☐ Test responsiveness (mobile, tablet, desktop)</li>
+            <li>☐ Push to GitHub</li>
+            <li>☐ Enable GitHub Pages</li>
+            <li>☐ Share your resume link!</li>
+        </ul>
+
+        <h2>📝 Content Customization</h2>
+
+        <h3>1. Update Your Header Information</h3>
+        <p>Open <code>index.html</code> and find the header section (around line 12-37):</p>
+        <pre>&lt;h1 class="name"&gt;Your Name&lt;/h1&gt;
+&lt;p class="title"&gt;Aspiring Web Developer&lt;/p&gt;
+
+&lt;a href="mailto:your.email@example.com"&gt;Email&lt;/a&gt;
+&lt;a href="https://github.com/yourusername"&gt;GitHub&lt;/a&gt;
+&lt;a href="https://linkedin.com/in/yourprofile"&gt;LinkedIn&lt;/a&gt;</pre>
+
+        <h3>2. Update Professional Summary</h3>
+        <p>Replace the placeholder text in the summary section with your own (2-3 sentences):</p>
+        <pre>&lt;section class="summary-section"&gt;
+    &lt;h2 class="section-title"&gt;Professional Summary&lt;/h2&gt;
+    &lt;p class="summary-text"&gt;Your summary here...&lt;/p&gt;
+&lt;/section&gt;</pre>
+
+        <h3>3. Update Education</h3>
+        <p>Modify the degree, institution, and graduation date:</p>
+        <pre>&lt;h3 class="degree"&gt;Bachelor of Science in [Your Major]&lt;/h3&gt;
+&lt;p class="institution"&gt;Your University Name&lt;/p&gt;
+&lt;p class="graduation"&gt;Expected Graduation: May 2026&lt;/p&gt;</pre>
+
+        <h3>4. Update Skills</h3>
+        <p>Edit the skills list. Each skill should be a separate <code>&lt;li&gt;</code> item:</p>
+        <pre>&lt;ul class="skills-list"&gt;
+    &lt;li class="skill-item"&gt;HTML5&lt;/li&gt;
+    &lt;li class="skill-item"&gt;CSS3&lt;/li&gt;
+    &lt;li class="skill-item"&gt;JavaScript&lt;/li&gt;
+    &lt;!-- Add more skills --&gt;
+&lt;/ul&gt;</pre>
+
+        <h3>5. Update Work Experience</h3>
+        <p>Add or modify job entries. For each job, update:</p>
+        <pre>&lt;article class="experience-item"&gt;
+    &lt;h3 class="job-title"&gt;Your Job Title&lt;/h3&gt;
+    &lt;p class="company"&gt;Company Name&lt;/p&gt;
+    &lt;p class="dates"&gt;Month Year - Month Year&lt;/p&gt;
+    &lt;ul class="job-description"&gt;
+        &lt;li&gt;Responsibility 1&lt;/li&gt;
+        &lt;li&gt;Responsibility 2&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/article&gt;</pre>
+
+        <h3>6. Update Projects</h3>
+        <p>Add or modify project entries with title, description, and links:</p>
+        <pre>&lt;article class="project-item"&gt;
+    &lt;h3 class="project-title"&gt;Project Name&lt;/h3&gt;
+    &lt;p class="project-description"&gt;Brief description...&lt;/p&gt;
+    &lt;p class="project-tech"&gt;&lt;strong&gt;Technologies:&lt;/strong&gt; HTML5, CSS3&lt;/p&gt;
+    &lt;a href="https://github.com/link" class="project-link"&gt;View on GitHub&lt;/a&gt;
+&lt;/article&gt;</pre>
+
+        <h2>🖼️ Adding Your Profile Image</h2>
+
+        <p>To add a professional headshot or profile image:</p>
+
+        <ol>
+            <li><strong>Prepare your image:</strong>
+                <ul>
+                    <li>Dimensions: 200x200 pixels (or larger square image)</li>
+                    <li>Format: JPG, PNG, or WebP</li>
+                    <li>Quality: High resolution, professional-looking</li>
+                    <li>File size: Optimized for web (under 200KB recommended)</li>
+                </ul>
+            </li>
+            <li><strong>Save the image:</strong>
+                <ul>
+                    <li>Name it <code>profile.jpg</code> (or update the filename in HTML)</li>
+                    <li>Place it in the same folder as <code>index.html</code></li>
+                </ul>
+            </li>
+            <li><strong>Update the HTML:</strong>
+                <pre>&lt;img src="profile.jpg" alt="Professional headshot" class="profile-image"&gt;</pre>
+            </li>
+        </ol>
+
+        <p class="highlight"><strong>💡 Tip:</strong> If you don't have a professional photo yet, you can use a placeholder image from sites like Unsplash or Pexels. Just remember to replace it before publishing!</p>
+
+        <h2>🎨 Styling Customization</h2>
+
+        <h3>Change the Color Scheme</h3>
+        <p>All colors are defined in <code>styles.css</code>. Look for these primary colors:</p>
+
+        <table>
+            <tr>
+                <th>Element</th>
+                <th>Current Color</th>
+                <th>CSS Property</th>
+                <th>Location</th>
+            </tr>
+            <tr>
+                <td>Primary Color (Headers, Links)</td>
+                <td><code>#0066cc</code> (Blue)</td>
+                <td>color, border-color</td>
+                <td>Throughout CSS</td>
+            </tr>
+            <tr>
+                <td>Header Background</td>
+                <td>Linear gradient (Blue)</td>
+                <td>background</td>
+                <td>.header selector</td>
+            </tr>
+            <tr>
+                <td>Text Color</td>
+                <td><code>#333</code> (Dark Gray)</td>
+                <td>color</td>
+                <td>body selector</td>
+            </tr>
+            <tr>
+                <td>Background</td>
+                <td><code>#f8f9fa</code> (Light Gray)</td>
+                <td>background-color</td>
+                <td>body selector</td>
+            </tr>
+        </table>
+
+        <p><strong>To change colors:</strong> Use find and replace in your editor:</p>
+        <ul>
+            <li>Find: <code>#0066cc</code> → Replace with your primary color</li>
+            <li>Find: <code>#0052a3</code> → Replace with a darker shade</li>
+            <li>Find: <code>#333</code> → Replace with your text color</li>
+        </ul>
+
+        <h3>Change Fonts</h3>
+        <p>Update the font-family in the <code>body</code> selector of <code>styles.css</code>:</p>
+        <pre>body {
+    font-family: 'Your Font Name', fallback-font;
+}</pre>
+
+        <p><strong>Font suggestions:</strong></p>
+        <ul>
+            <li><code>'Georgia', serif</code> - Classic, professional</li>
+            <li><code>'Arial', sans-serif</code> - Clean, modern</li>
+            <li><code>'Trebuchet MS', sans-serif</code> - Friendly, modern</li>
+            <li>Google Fonts: <a href="https://fonts.google.com">https://fonts.google.com</a></li>
+        </ul>
+
+        <h3>Adjust Spacing</h3>
+        <p>To make the page feel more spacious or compact, modify these values in <code>styles.css</code>:</p>
+        <pre>/* Increase spacing */
+margin-bottom: 2rem; /* was 1.5rem */
+padding: 3rem 2rem; /* was 2rem 2rem */
+
+/* Decrease spacing */
+margin-bottom: 0.5rem; /* was 1rem */
+padding: 1rem; /* was 2rem */</pre>
+
+        <h2>📱 Testing Responsiveness</h2>
+
+        <p>Ensure your site looks good on all devices:</p>
+
+        <h3>Desktop (1200px+)</h3>
+        <ul>
+            <li>Full navigation visible</li>
+            <li>Multiple columns for skills</li>
+            <li>Comfortable reading line length</li>
+        </ul>
+
+        <h3>Tablet (768px - 1199px)</h3>
+        <ul>
+            <li>Adjusted font sizes</li>
+            <li>2-column skill grid</li>
+            <li>Touch-friendly buttons</li>
+        </ul>
+
+        <h3>Mobile (< 768px)</h3>
+        <ul>
+            <li>Single column layout</li>
+            <li>Vertical navigation menu</li>
+            <li>Large touch targets</li>
+        </ul>
+
+        <p><strong>To test:</strong></p>
+        <ol>
+            <li>Open <code>index.html</code> in your browser</li>
+            <li>Press <code>F12</code> to open Developer Tools</li>
+            <li>Click the device toggle (📱 icon) in the top-left</li>
+            <li>Select different device sizes from the dropdown</li>
+        </ol>
+
+        <h2>🚀 Deploying to GitHub Pages</h2>
+
+        <h3>Step 1: Prepare Your Files</h3>
+        <ul>
+            <li>Ensure all files are in your GitHub repository</li>
+            <li>Main file must be named <code>index.html</code></li>
+            <li>All CSS and images should be in the same directory</li>
+        </ul>
+
+        <h3>Step 2: Enable GitHub Pages</h3>
+        <ol>
+            <li>Go to your repository on GitHub</li>
+            <li>Click <strong>Settings</strong> tab</li>
+            <li>Scroll down to <strong>GitHub Pages</strong> section</li>
+            <li>Under <strong>Source</strong>, select <strong>main</strong> branch</li>
+            <li>Click <strong>Save</strong></li>
+        </ol>
+
+        <h3>Step 3: Access Your Site</h3>
+        <p>After 1-2 minutes, your site will be live at:</p>
+        <pre>https://[yourusername].github.io/[repository-name]</pre>
+
+        <p class="success">✅ Your resume is now publicly accessible!</p>
+
+        <h2>📚 Additional Features</h2>
+
+        <h3>Add More Sections</h3>
+        <p>Want to add sections like Certifications, Languages, or Volunteer Work? Follow this pattern:</p>
+        <pre>&lt;section class="your-section-name"&gt;
+    &lt;h2 class="section-title"&gt;Section Title&lt;/h2&gt;
+    &lt;article class="item"&gt;
+        &lt;h3&gt;Item Title&lt;/h3&gt;
+        &lt;p&gt;Item details&lt;/p&gt;
+    &lt;/article&gt;
+&lt;/section&gt;</pre>
+
+        <p>Then add CSS styling for your new section.</p>
+
+        <h3>Add Social Media Icons</h3>
+        <p>To add icons next to contact links, you can use emoji or icon fonts:</p>
+        <pre>&lt;a href="mailto:email@example.com"&gt;📧 Email&lt;/a&gt;
+&lt;a href="https://github.com"&gt;🔗 GitHub&lt;/a&gt;
+&lt;a href="https://linkedin.com"&gt;💼 LinkedIn&lt;/a&gt;</pre>
+
+        <h2>🔍 Accessibility Checklist</h2>
+        <ul>
+            <li>☐ All images have descriptive alt text</li>
+            <li>☐ Heading hierarchy is correct (h1 → h2 → h3)</li>
+            <li>☐ Color contrast meets WCAG standards (4.5:1 for text)</li>
+            <li>☐ Links are clearly distinguishable</li>
+            <li>☐ Page is keyboard navigable</li>
+            <li>☐ Mobile viewport is set in meta tags</li>
+        </ul>
+
+        <h2>🐛 Troubleshooting</h2>
+
+        <h3>Problem: Images Not Showing</h3>
+        <p><strong>Solution:</strong> Ensure the image filename matches exactly in the HTML and file system are case-sensitive on some servers.</p>
+
+        <h3>Problem: Styles Not Applied</h3>
+        <p><strong>Solution:</strong> Clear your browser cache (Ctrl+Shift+Delete) and refresh the page.</p>
+
+        <h3>Problem: GitHub Pages Not Publishing</h3>
+        <p><strong>Solution:</strong> Check that your repository is public and GitHub Pages is enabled in Settings.</p>
+
+        <h3>Problem: Layout Broken on Mobile</h3>
+        <p><strong>Solution:</strong> Verify the viewport meta tag is present: <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></p>
+
+        <h2>📖 Resources</h2>
+        <ul>
+            <li><a href="https://pages.github.com/">GitHub Pages Documentation</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN HTML Documentation</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">MDN CSS Documentation</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">CSS Flexbox Guide</a></li>
+            <li><a href="https://css-tricks.com/snippets/css/complete-guide-grid/">CSS Grid Guide</a></li>
+            <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">WCAG Accessibility Guidelines</a></li>
+        </ul>
+
+        <h2>💡 Tips for Success</h2>
+        <ul>
+            <li>Make multiple commits as you work (not just one final commit)</li>
+            <li>Write descriptive commit messages</li>
+            <li>Test on real devices, not just browser emulation</li>
+            <li>Keep content concise and impactful</li>
+            <li>Use consistent formatting throughout</li>
+            <li>Ask for feedback from peers</li>
+        </ul>
+
+        <p class="highlight"><strong>📌 Remember:</strong> This webpage is a living document. Update it as you gain more experience, skills, and projects throughout your career!</p>
+
+        <div class="footer">
+            <p><strong>ITMD 441 - Web Development</strong></p>
+            <p>Created: February 2026 | Last Updated: February 2026</p>
+            <p>Project Status: ✅ Complete and Ready for GitHub Pages Deployment</p>
+        </div>
+    </div>
+</body>
+</html>
